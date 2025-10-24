@@ -1,0 +1,19 @@
+torchrun --standalone --nproc_per_node 1 torchrun_main.py \
+    --model_config configs/llama_350m.json \
+    --single_gpu \
+    --lr 0.001 \
+    --low_rank_scale 0.25 \
+    --rank 256 \
+    --subspace_update_interval 200 \
+    --batch_size 64 \
+    --total_batch_size 128 \
+    --num_training_steps 10000 \
+    --warmup_steps 1000 \
+    --weight_decay 0 \
+    --dtype bfloat16 \
+    --eval_every 10000 \
+    --optimizer low_rank_adamw  \
+    --st_init_step_size 10 \
+    --subspace_update_method subtrack \
+    --adaptive_optimizer \
+    --recovery_scaling
