@@ -60,11 +60,12 @@ If you use this work, please cite:
 
 ```bibtex
 @inproceedings{
-  subtrackpp2025,
-  title={SubTrack++: Gradient Subspace Tracking for Scalable LLM Training},
-  author={Anonymous Authors},
-  booktitle={NeurIPS},
-  year={2025}
+rajabi2025subtrack,
+title={SubTrack++ : Gradient Subspace Tracking for Scalable {LLM} Training},
+author={Sahar Rajabi and Nayeema Nonta and Sirisha Rambhatla},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025},
+url={https://openreview.net/forum?id=6geRIdlFWJ}
 }
 ```
 
