@@ -169,7 +169,7 @@ class LowRankProjector:
         self.ortho_matrix = torch.matmul(
             torch.matmul(
                 torch.concat([torch.matmul(self.ortho_matrix, V), U], 1),
-                torch.concat([torch.cos(-1*self.st_step_size * Sigma), torch.sin(self.st_step_size * Sigma)], 0)
+                torch.concat([torch.cos(self.st_step_size * Sigma), torch.sin(-1*self.st_step_size * Sigma)], 0)
             ).reshape((self.ortho_matrix.shape[0]), Sigma.shape[0]), V.t()
         ) + torch.matmul(
             self.ortho_matrix, (torch.eye(V.shape[0]).to("cuda") - torch.matmul(V, V.t()))
