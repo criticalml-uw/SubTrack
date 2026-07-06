@@ -1,0 +1,17 @@
+torch
+transformers==4.31.0
+tokenizers
+datasets
+peft
+wandb
+loguru
+nvitop
+lion-pytorch
+matplotlib
+bitsandbytes
+scipy
+scikit-learn
+evaluate
+deepspeed>=0
+huggingface_hub>=0
+fsspec>=0

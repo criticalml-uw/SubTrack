@@ -1,0 +1,7 @@
+.idea/*
+.DS_Store*
+*.jsonl
+*.png
+BAdam-local/src/badam.egg-info/
+wandb/
+plots/
